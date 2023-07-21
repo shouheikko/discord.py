@@ -45,7 +45,7 @@ class DynamicCounter(
 
     # This method actually extracts the information from the custom ID and creates the item.
     @classmethod
-    async def from_custom_id(cls, interaction: discord.Interaction, match: re.Match[str], /):
+    async def from_custom_id(cls, interaction: discord.Interaction, item: discord.ui.Button, match: re.Match[str], /):
         count = int(match['count'])
         user_id = int(match['id'])
         return cls(count, user_id)
