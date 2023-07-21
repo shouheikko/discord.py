@@ -443,6 +443,14 @@ Item
 .. autoclass:: discord.ui.Item
     :members:
 
+DynamicItem
+~~~~~~~~~~~~
+
+.. attributetable:: discord.ui.DynamicItem
+
+.. autoclass:: discord.ui.DynamicItem
+    :members:
+
 Button
 ~~~~~~~
 
