@@ -148,7 +148,7 @@ class Item(Generic[V]):
         .. note::
 
             If an exception occurs within the body then the check
-            is considered a failure and :meth:`ui.View.on_error` is called.
+            is considered a failure and :meth:`discord.ui.View.on_error` is called.
 
             For :class:`~discord.ui.DynamicItem` this does not call the ``on_error``
             handler.

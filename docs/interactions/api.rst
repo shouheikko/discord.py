@@ -450,6 +450,7 @@ DynamicItem
 
 .. autoclass:: discord.ui.DynamicItem
     :members:
+    :inherited-members:
 
 Button
 ~~~~~~~

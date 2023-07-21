@@ -67,7 +67,7 @@ class DynamicItem(Generic[BaseT], Item['View']):
     ------------
     item: :class:`Item`
         The item to wrap with dynamic custom ID parsing.
-    template: Union[:class:`str`, :class:`re.Pattern`]
+    template: Union[:class:`str`, ``re.Pattern``]
         The template to use for parsing the ``custom_id``. This can be a string or a compiled
         regular expression. This must be passed as a keyword argument to the class creation.
     row: Optional[:class:`int`]
@@ -114,7 +114,7 @@ class DynamicItem(Generic[BaseT], Item['View']):
 
     @property
     def template(self) -> re.Pattern[str]:
-        """:class:`re.Pattern`: The compiled regular expression that is used to parse the ``custom_id``."""
+        """``re.Pattern``: The compiled regular expression that is used to parse the ``custom_id``."""
         return self.__class__.__discord_ui_compiled_template__
 
     def to_component_dict(self) -> Dict[str, Any]:
@@ -190,9 +190,9 @@ class DynamicItem(Generic[BaseT], Item['View']):
 
         Parameters
         ------------
-        interaction: :class:`Interaction`
+        interaction: :class:`~discord.Interaction`
             The interaction that the component belongs to.
-        match: :class:`re.Match`
+        match: ``re.Match``
             The match object that was created from the ``template``
             matching the ``custom_id``.
 
